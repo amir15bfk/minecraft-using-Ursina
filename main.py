@@ -1,5 +1,5 @@
 from ursina import *
-from ursina.prefabs.first_person_controller import FirstPersonController
+from first_person_controller import FirstPersonController
 import sys
 def update():
     if held_keys['k']:
@@ -35,6 +35,5 @@ for z in range(-8,8):
     for x in range(-8,8):
         voxel = Voxel((x,-10,z))
 player = FirstPersonController()
-player.gravity=0
 
 app.run()
